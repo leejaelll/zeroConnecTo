@@ -1,1 +1,47 @@
-/* 웹카페 실습 */
+@import url("./normalize.css");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.header,
+.visual,
+.main,
+.slogan,
+.footer-inner {
+    width: 940px;
+    margin: 0 auto;
+}
+/* Header */
+.header {
+    background-color: yellow;
+    height: 10vh;
+}
+
+/* Visual */
+.visual {
+    background: pink;
+    height: 120px;
+}
+/* Main contents */
+.main {
+    background: blue;
+    min-height: 400px;
+}
+
+/* Main contents */
+.slogan {
+    background: lime;
+    height: 10vh;
+}
+
+.footer {
+    background: purple;
+}
+
+.footer-inner {
+    background: orange;
+    height: 10vh;
+}
