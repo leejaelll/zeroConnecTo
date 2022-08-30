@@ -17,7 +17,6 @@
 /* Header */
 .header {
     background-color: yellow;
-    height: 10vh;
 }
 
 /* Visual */
@@ -29,12 +28,39 @@
 .main {
     background: blue;
     min-height: 400px;
+    /* display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap; */
+    padding: 30px 15px;
+}
+
+.clearfix::after {
+    content: "";
+    background: red;
+    clear: both;
+    display: block;
+}
+
+.group {
+    background: gray;
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.group1 {
+    width: 250px;
+}
+.group2 {
+    width: 380px;
+    /* order: 1; */
+}
+.group3 {
+    width: 190px;
 }
 
 /* Main contents */
 .slogan {
     background: lime;
-    height: 10vh;
 }
 
 .footer {
@@ -43,5 +69,4 @@
 
 .footer-inner {
     background: orange;
-    height: 10vh;
 }
