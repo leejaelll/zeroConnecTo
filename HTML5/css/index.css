@@ -1,5 +1,8 @@
 @import url("./normalize.css");
 @import url("./reset.css");
+:root {
+    --spacing: 8px;
+}
 
 *,
 *::before,
@@ -28,6 +31,11 @@ body {
     );
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* 레이아웃 */
 
 .header,
@@ -41,8 +49,36 @@ body {
 /* Header */
 .header {
     background-color: #fff;
+    position: relative;
+    padding: 0 30px;
+}
+/* 로고 */
+.logo {
+    /* background: blue; */
+    position: absolute;
+    top: 45px;
+    left: 65px;
 }
 
+/* 멤버 링크 모음 */
+.member {
+    /* display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center; */
+    text-align: right;
+    padding: 4px 0;
+    transform: translateX(8px);
+}
+.member li,
+.member a {
+    display: inline-block;
+}
+
+.member a {
+    padding: 6px 8px;
+    text-transform: uppercase;
+}
 /* Visual */
 .visual {
     background: pink;
