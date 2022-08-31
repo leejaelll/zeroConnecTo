@@ -10,8 +10,16 @@
     box-sizing: border-box;
 }
 
-/* 기본스타일 */
+/* 숨김컨텐츠 */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+}
 
+/* 기본스타일 */
 html {
     font-size: 10px;
 }
@@ -79,6 +87,15 @@ a {
     padding: 6px 8px;
     text-transform: uppercase;
 }
+/* 메인메뉴 */
+.navigation {
+    padding-bottom: 40px;
+}
+
+.menu {
+    background: orange;
+}
+
 /* Visual */
 .visual {
     background: pink;
