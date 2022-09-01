@@ -236,7 +236,6 @@ a {
     animation-direction: alternate;
      */
     animation: fadeEffect 3000ms alternate infinite;
-    animation-play-state: paused;
 }
 
 .visual::before {
@@ -257,6 +256,8 @@ a {
     animation-name: moveEffect;
     animation-duration: 1000ms;
     animation-fill-mode: forwards;
+    position: relative;
+    z-index: 10;
 }
 /* Main contents */
 .main {
