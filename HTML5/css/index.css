@@ -459,13 +459,149 @@ a {
 }
 
 .search-form-inner .form-group {
-    background: yellow;
     flex-grow: 1;
 }
 
 .search-form-inner .form-group-input {
     margin-right: 12px;
 }
+
+/* 공지사항 및 자료실 */
+.board {
+    margin-top: 20px;
+    position: relative;
+    min-height: 180px;
+}
+
+.board-tab {
+    /* float: left; */
+    position: absolute;
+    top: 0;
+    border: 1px solid #aaa;
+    background: #ccc;
+    border-radius: 4px 4px 0 0;
+    padding: 6px 14px;
+    color: #666;
+}
+.notice-tab {
+    left: 0;
+}
+.archive-tab {
+    left: 80px;
+}
+
+.is-select .board-tab {
+    border-color: currentColor currentColor transparent currentColor;
+    color: #e85e2c;
+    background: #fff;
+}
+
+.is-select .board-panel,
+.is-select .board-more {
+    display: block;
+}
+.board-panel,
+.board-more {
+    display: none;
+}
+
+.board-more {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+/* 공통 더보기 스타일 */
+.more {
+    padding: 8px;
+}
+.more::before {
+    color: hsla(110, 50%, 30%, 1);
+}
+
+.board-panel {
+    /* position: absolute;
+    width: 100%;
+    top: 40px; */
+    padding-top: 40px;
+}
+
+.board-panel li {
+    margin-top: 12px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.board-panel a {
+    width: calc(100% - 5em);
+    margin-right: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 연습 코드 */
+/*
+.notice {
+    background: pink;
+}
+
+.notice-tab {
+    top: 0;
+}
+.archive-tab {
+    top: 0;
+    left: 75px;
+}
+
+.board-tab {
+    /* 공통적인 탭 스타일링 - 버튼의 위치 */
+/* position: absolute;
+    
+}
+
+.is-select .board-tab {
+    background-color: #fff;
+    border-color: #ccc;
+    border-bottom: #fff;
+    color: #e85e2c;
+}
+
+.board-panel,
+.board-more {
+    display: none;
+}
+
+.is-select .board-panel,
+.is-select .board-more {
+    display: block;
+}
+
+.board-panel {
+    padding-top: 35px;
+}
+
+.board-panel li {
+    display: flex;
+}
+
+.board-panel a {
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.more {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    padding: 8px;
+}
+*/
+
 /* 
 .search-form {
     border-left: 1px solid;
