@@ -2,6 +2,7 @@
 @import url("./fontello.css");
 @import url("./normalize.css");
 @import url("./reset.css");
+@import url("./form.css");
 
 :root {
     --spacing: 8px;
@@ -447,6 +448,25 @@ a {
     float: right;
 }
 
+/* 검색영역 */
+.search-form-inner {
+    background: #ccc linear-gradient(to bottom, #ccc, #eee);
+    padding: 15px 25px 10px;
+    border: 1px solid #aaa;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.search-form-inner .form-group {
+    background: yellow;
+    flex-grow: 1;
+}
+
+.search-form-inner .form-group-input {
+    margin-right: 12px;
+}
+/* 
 .search-form {
     border-left: 1px solid;
     border-right: 1px solid;
@@ -470,12 +490,6 @@ a {
 
 .form-group-input {
     margin-left: 10px;
-}
-/* 
-.button-fill {
-    border-style: none;
-
-    color: white;
 } */
 
 /* Main contents */
