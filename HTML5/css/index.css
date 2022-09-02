@@ -463,8 +463,13 @@ a {
 
 .form-group-input {
     margin-left: 10px;
-    width: 200px;
 }
+/* 
+.button-fill {
+    border-style: none;
+
+    color: white;
+} */
 
 /* Main contents */
 .slogan {
