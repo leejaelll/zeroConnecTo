@@ -446,6 +446,26 @@ a {
 .cross .term-list-thumbnail {
     float: right;
 }
+
+.search-form {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    border-radius: 10px 10px 0 0;
+    background-image: linear-gradient(to bottom, #ccc, #eee);
+}
+
+.search-form fieldset {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.form-group-input {
+    margin-left: 10px;
+    width: 200px;
+}
+
 /* Main contents */
 .slogan {
     background: lime;
