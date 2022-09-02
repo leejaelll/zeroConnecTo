@@ -409,7 +409,7 @@ legend {
     text-indent: 45px;
     border: 1px solid #aaa;
     border-radius: 50px;
-    background: url(./images/validation_icon.png) no-repeat 15px 50% /18px 18px,
+    background: url("./images/validation_icon.png") no-repeat 15px 50% /18px 18px,
         linear-gradient(to bottom, #ccc, #eee);
     display: block;
 }

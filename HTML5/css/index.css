@@ -33,13 +33,15 @@ body {
         "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
         "Segoe UI Symbol", sans-serif;
     font-size: 1.4rem;
-    background-color: #ccc;
+    /* background-color: #ccc;
     background-image: url("./images/bg_flower.png"),
         linear-gradient(#ccc 0%, #eee 50%, #fff 60%, #fff 100%);
+
     background-repeat: no-repeat;
-    background-position: 50% 0;
-    /* background: url("./images/bg_flower.png") no-repeat 50% 0,
-        linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%), #fff; */
+    background-position: 50% 0; */
+
+    background: url("./images/bg_flower.png") no-repeat 50% 0,
+        linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%), #fff;
 }
 
 a {
@@ -192,7 +194,6 @@ a {
 }
 
 /* Visual */
-
 @keyframes moveEffect {
     /* 시작 지점from 끝나는지점 to */
     0% {
@@ -231,11 +232,6 @@ a {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-    /* animation-name: fadeEffect;
-    animation-duration: 3000ms;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-     */
     animation: fadeEffect 3000ms alternate infinite;
 }
 
@@ -245,7 +241,6 @@ a {
     background-position: 0 -10px, 600px 0;
 }
 .visual::after {
-    /* background: yellow; */
     background-image: url("./images/ani_flower_03.png"),
         url("./images/ani_flower_04.png");
     background-position: 300px 10px, 800px 10px;
@@ -376,7 +371,6 @@ a {
 /*유효성 검사 배너 */
 .validation-list {
     margin-top: 25px;
-    margin-bottom: 20px;
 }
 
 .validation-list li {
@@ -398,6 +392,60 @@ a {
     color: #e85e2c;
 }
 
+/* 웹관련용어 */
+.term {
+    background: #ccc linear-gradient(to bottom, #ccc, #eee);
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.term-title {
+    font-weight: 700;
+}
+
+.term-list {
+    margin-top: 15px;
+}
+
+.term-list > div {
+    display: flow-root;
+    margin-top: 10px;
+}
+
+.term-list-subject,
+.term-list-brief {
+    float: right;
+    width: 145px;
+}
+
+.term-list-subject {
+    color: #296897;
+    font-weight: 500;
+}
+
+.term-list-thumbnail {
+    float: left;
+}
+.term-list-thumbnail img {
+    vertical-align: middle;
+    /* display: block; */
+}
+
+.term-list-brief {
+    line-height: 1.5;
+    margin-top: 5px;
+}
+
+.cross .term-list-subject,
+.cross .term-list-brief {
+    float: left;
+}
+
+.cross .term-list-thumbnail {
+    float: right;
+}
 /* Main contents */
 .slogan {
     background: lime;
