@@ -255,6 +255,7 @@ a {
     animation-fill-mode: forwards;
     position: relative;
     z-index: 10;
+    width: fit-content;
 }
 /* Main contents */
 .main {
@@ -855,7 +856,7 @@ a {
     background-position: 0 100%;
 }
 
-.favorite-more {
+.favorite-mre {
     position: absolute;
     top: -8px;
     right: -8px;
@@ -863,7 +864,42 @@ a {
 
 /* 슬로건 */
 .slogan {
-    background: rgb(202, 252, 202);
+    position: relative;
+    padding: 15px 80px 15px 180px;
+}
+
+.slogan-title {
+    width: 110px;
+    height: 83px;
+    position: absolute;
+    bottom: -25px;
+    left: 35px;
+    text-align: center;
+    line-height: 83px;
+}
+
+.slogan-content {
+    color: #989763;
+}
+
+.slogan-content q::before {
+    font-size: 3rem;
+    display: inline-block;
+    transform: translateY(10px);
+}
+
+.slogan-content q::after {
+    content: "";
+}
+
+.slogan-title::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("./images/coffee.png") no-repeat;
+    top: 0;
+    left: 0;
 }
 
 .footer {
@@ -878,6 +914,44 @@ a {
 }
 
 .footer-inner {
-    background: orange;
-    height: 15vh;
+    position: relative;
+
+    padding: 15px 100px 15px 180px;
+}
+
+.footer-logo {
+    position: absolute;
+    top: 45px;
+    left: 35px;
+}
+
+.guide-list {
+    background: #7b8385;
+    color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.guide-list a {
+    display: block;
+    padding: 6px 12px;
+    text-transform: uppercase;
+}
+
+.address {
+    margin-top: 15px;
+}
+.copyright {
+    display: block;
+    margin-top: 5px;
+}
+
+.badge-container {
+    position: absolute;
+    right: 0;
+    top: 15px;
 }
