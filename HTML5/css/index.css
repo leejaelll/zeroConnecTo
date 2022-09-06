@@ -696,6 +696,10 @@ a {
     background: #ccc linear-gradient(to bottom, #ccc, #eee);
 }
 
+.margin-top-default {
+    margin-top: 20px;
+}
+
 .event {
     display: flex;
     flex-flow: row wrap;
@@ -705,7 +709,8 @@ a {
 }
 
 .event-title,
-.related-title {
+.related-title,
+.favorite-title {
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -792,6 +797,71 @@ a {
     padding: 10px 0;
 }
 
+/* 인기사이트 */
+.favorite {
+    position: relative;
+}
+
+.favorite-list {
+    list-style: none;
+    margin-top: 10px;
+    counter-reset: number;
+}
+
+.favorite-list li {
+    counter-increment: number;
+    margin-top: 8px;
+    /* position: relative; */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.favorite-list li::before {
+    content: counter(number);
+    color: #fff;
+    background-color: #aaa;
+    border-radius: 2px;
+    display: inline-block;
+    width: 1.2em;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-right: 0.5em;
+}
+
+/* sprite기법 사용 */
+.favorite-list em {
+    display: inline-block;
+
+    /* flex를 사용하지 않고 사용하는 법 */
+    /* position: absolute;
+    right: 0;
+    top: 50%;
+    /* margin-top: -5px; */
+    /* transform: translateY(-50%);  */
+    width: 9px;
+    height: 11px;
+
+    background-image: url("./images/rank.png");
+    background-repeat: no-repeat;
+    margin-left: auto;
+}
+
+.favorite-list .stop {
+    background-position: 0 50%;
+}
+
+.favorite-list .down {
+    background-position: 0 100%;
+}
+
+.favorite-more {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+/* 슬로건 */
 .slogan {
     background: rgb(202, 252, 202);
 }
