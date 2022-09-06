@@ -688,7 +688,79 @@ a {
     margin-top: 15px;
 }
 
-/* Main contents */
+/* 신규이벤트 */
+.gradient-effect {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 10px;
+    background: #ccc linear-gradient(to bottom, #ccc, #eee);
+}
+
+.event {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 10px;
+}
+
+.event-title,
+.related-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.accent-color {
+    color: #e85e2c;
+}
+
+.event-button-wrapper {
+    overflow: hidden;
+    height: 18px;
+    margin-left: auto;
+    transform: translate(2px, -2px);
+}
+
+.event-button-prev,
+.event-button-next {
+    border: 0;
+    width: 19px;
+    height: 0;
+    /* 구체성 이슈에 대한 내용 */
+    /* .event-button-wrapper button 으로 작성했을 떄  */
+    /* background: pink url("./images/back_forward.png") no-repeat 0 0; */
+    background-color: pink;
+    background-image: url("./images/back_forward.png");
+    background-repeat: no-repeat;
+    padding: 18px 0 0 0;
+}
+
+.event-button-wrapper button:focus {
+    outline-offset: 2px;
+}
+
+.event-button-next {
+    background-position: -36px 0;
+}
+
+.event div:last-child {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.event-thumbnail img {
+    box-shadow: 7px 5px 0 0 #aaa;
+}
+
+.event-brief {
+    margin-top: 12px;
+    line-height: 1.5;
+}
+
+.related {
+    margin-top: 10px;
+}
+
 .slogan {
     background: lime;
 }
