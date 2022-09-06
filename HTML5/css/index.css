@@ -736,7 +736,7 @@ a {
 }
 
 .event-button-wrapper button:focus {
-    outline-offset: 2px;
+    outline-offset: -2px;
 }
 
 .event-button-next {
@@ -757,12 +757,43 @@ a {
     line-height: 1.5;
 }
 
+/* 관련 사이트 */
 .related {
     margin-top: 10px;
 }
 
+.related-list {
+    margin-top: 10px;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+
+    /* 마우스 올리기 전 상태 */
+    height: 27px;
+    overflow: hidden;
+
+    /* transition: 실행되는 속도, delay time */
+    transition: height 1000ms, padding 1000ms 400ms;
+}
+
+.related-list a {
+    display: block;
+    line-height: 1.5;
+    text-indent: 15px;
+}
+
+.related-list a:focus {
+    outline-offset: -2px;
+}
+
+.related-list:hover,
+.related-list:focus {
+    height: 147px;
+    padding: 10px 0;
+}
+
 .slogan {
-    background: lime;
+    background: rgb(202, 252, 202);
 }
 
 .footer {
