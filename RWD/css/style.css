@@ -41,6 +41,7 @@
 
 .searchForm__group .formInput__input {
     border-radius: 0.25rem;
+    appearance: none;
     border: 1px solid var(--silver);
     padding: 0.125rem 0.75rem;
     width: 100%;
