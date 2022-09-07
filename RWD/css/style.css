@@ -2,3 +2,155 @@
 @import url("./a11y.css");
 @import url("./theme.css");
 @import url("./base.css");
+
+/* 공통스타일 */
+/* 헤더 */
+.appHeader {
+    background: yellow;
+    padding: var(--spacing-base) var(--spacing-lg);
+}
+
+/* 네비게이션 */
+.appNavigation {
+    background: pink;
+    padding: var(--spacing-base) var(--spacing-lg);
+}
+
+/* 메인컨텐츠 */
+.appMain {
+    background: blue;
+    padding: var(--spacing-base) var(--spacing-lg);
+}
+
+/* 추천서적 */
+.book {
+    background: yellow;
+}
+
+/* 새소식 */
+.news {
+    background: orange;
+}
+
+/* 게시판 */
+.board {
+    background: skyblue;
+}
+
+/* 인기사이트 */
+.favorite {
+    background: violet;
+}
+
+/* 트위터 */
+.twitter {
+    background: green;
+}
+
+/* 앱푸터 */
+.appFooter {
+    background: lime;
+    padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+/* 모바일 */
+/* 최대 767px까지 */
+@media (max-width: 767px) {
+    /* 모바일 네비게이션 */
+    .appNavigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100vh;
+        /* 100%를 쓰지 못하는 이유 : body가 컨테이닝블록인데 body는 컨텐츠 크기만큼 늘어나기때문에 사용x */
+        transform: translateX(-120%);
+    }
+
+    /* 모바일 메인컨텐츠 */
+    .appMain {
+        display: flex;
+        flex-flow: row wrap;
+        gap: var(--spacing-base);
+    }
+
+    /* 모바일 메인 콘텐츠 섹션 */
+    .book,
+    .news,
+    .board,
+    .favorite,
+    .twitter {
+        width: 100%;
+    }
+}
+
+/* 데스크탑 스타일 */
+@media (min-width: 768px) {
+    /* 데스크탑 헤더 */
+    .appHeader {
+        max-width: var(--container-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* 데스크탑 네비게이션 */
+    .appNavigation {
+        background: var(--secondary-color);
+        color: var(--white);
+    }
+
+    /* 데스크탑 메인 메뉴 */
+    .menu {
+        max-width: var(--container-width);
+        margin-left: auto;
+        margin-right: auto;
+        background: tomato;
+    }
+
+    /* 데스크탑 메인컨텐츠 */
+    .appMain {
+        max-width: var(--container-width);
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "news news news news news news news news news news news news"
+            "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
+            "book book book book . board board board board board board board";
+        gap: var(--spacing-base);
+    }
+
+    /* 데스크탑 추천 서적 */
+    .book {
+        /* grid-row-start: 2;
+        grid-column-start: 1;
+        grid-row-end: 4;
+        grid-column-end: 5; */
+        /* shortHand */
+        /* grid-row: 2/4;
+        grid-column: 1/5; */
+        /* grid-area: 2/1/4/5; */
+        grid-area: book;
+    }
+
+    /* 데스크탑 새소식 */
+    .news {
+        grid-area: news;
+    }
+
+    /* 데스크탑 게시판 */
+    .board {
+        grid-area: board;
+    }
+
+    /* 데스크탑 인기사이트 */
+    .favorite {
+        grid-area: favorite;
+    }
+    /* 데스크탑 트위터 */
+    .twitter {
+        grid-area: twitter;
+    }
+} ;
