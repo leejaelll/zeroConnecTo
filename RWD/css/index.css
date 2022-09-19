@@ -330,6 +330,7 @@ input[type="search"] {
         right: var(--spacing-lg);
         padding: 0.25rem;
     }
+
     .button--burger {
         width: 2rem;
         height: 2rem;
